@@ -5,18 +5,18 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.FileWriter;
-import java.io.IOException;
+//import java.io.IOException;
 
 import org.apache.poi.xssf.usermodel.*;
 
-public class txt_write {
+public class txt_write extends Path{
 
 	
 	public static void txt_write_notepad(String name,String avai ,String details) throws Exception {
 		
-		String path = "e:\\\\data.txt";				//notepad file path
+		//String path = "e:\\\\data.txt";				//notepad file path
 		
-		FileWriter fr=new FileWriter(path);
+		FileWriter fr=new FileWriter(notepad_path);
 		BufferedWriter br=new BufferedWriter(fr);
 		
 		br.write("This is sample");
@@ -33,10 +33,10 @@ public class txt_write {
 	
 	public static void txt_write_excel(String name,String avai ,String details) throws Exception {
 			
-			String path = "e:\\\\data.xlsx";				//excel file path
+			//String path = "e:\\\\data.xlsx";				//excel file path
 			String sheet_Name = "sheet1";						//name of the sheet
 			
-			File file = new File(path);
+			File file = new File(excel_path);
 			
 			FileInputStream fis = new FileInputStream(file);
 			XSSFWorkbook wb = new XSSFWorkbook(fis);
