@@ -1,0 +1,20 @@
+[
+	{
+		"users":	{
+			"username" : "rohan@gmail.com",	
+			"password" : "rohan12345"
+		}
+	},
+	{
+		"users" : 	{
+			"username" : "abc@gmail.com",
+			"password" : "abc123"
+		}
+	},
+	{
+		"users" : 	{
+			"username" : "1234567890",
+			"password" : "abc123"
+		}
+	}
+]
